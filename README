@@ -1,0 +1,36 @@
+Toma Andrei 321CB
+
+	void reverse (char *s) - functia inverseaza sirul de caractere s dat
+ca parametru.
+________________________________________________________________________________
+
+	void DecToHex(int decimal, char *hexnum) - functia converteste un numar
+zecimal intreg intr-un numar scris in baza hexa. Daca numarul este mai mare
+decat 0 pur si simplu se aplica algoritmul de transformare in baza 16. Altfel,
+se face cast la unsigned int numarului dat ca parametru si acesta obtinut din
+urma i se aplica algoritmul de transformare in baza 16. Numarul scris in baza
+hexa se va afla in stringul hexnum.
+________________________________________________________________________________
+
+	void unsignedIntToString(unsigned int x, char *s) - functia transforma
+un intreg fara semn intr-un sir de caractere. Se extrage ultima cifra din numar,
+se converteste la caracter si se face append la strigul s. In final se intoarce
+invers sirul s de caractere si aceasta este numarul intreg convertit.
+________________________________________________________________________________
+
+	void intToString(long long int x, char *s) - functia transforma un
+intreg intr-un sir de caractere. Se obtine modulul numarului si dupa asta se
+extrage pe rand cate o cifra din valoarea obtinuta si se face append la stringul
+s. La final daca numarul era negativ se adauga la finalul sirului de caractere s
+un '-'. La final se intoarce sirul invers si numarul x este convertit intr-un
+sir de caractere.
+________________________________________________________________________________
+
+	int iocla_printf(const char *format, ...) - se incepe citirea
+parametrilor functiei. Se parcurge sirul format pe caractere si de fiecare data
+cand este gasit incepeutul unui specificator se evalueaza ce se doreste sa fie
+afisat (intreg, scriere in hexa etc.). Cand se gaseste un specificator se
+extrage urmatorul parametru se prelucreaza, dupa se da la afisare si se adauga
+la numarul de caractere afisat. Daca nu este gasit inceputul unui specificator
+pur si simplu se afiseaza caracterul gasit. In final se returneaza numarul
+de caractere afisat. 
